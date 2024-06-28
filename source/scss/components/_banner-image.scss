@@ -1,0 +1,30 @@
+.banner-image {
+
+  .row {
+    align-items: flex-end;
+  }
+
+  .col-lg-7 {
+    padding-bottom: 54px;
+  }
+
+  .banner-title {
+    font-size: 50px;
+    font-weight: 323;
+    margin-bottom: 16px;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+    color: $--color-default;
+  }
+
+  .h6 {
+    margin-bottom: 50px;
+  }
+
+  .image-wrapper {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+}

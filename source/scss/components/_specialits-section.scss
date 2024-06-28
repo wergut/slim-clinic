@@ -1,0 +1,108 @@
+.specialist-section {
+  background-image: url(../img/specialists-back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 633px;
+  overflow: hidden;
+
+  .h3 {
+    margin-bottom: 10px;
+  }
+
+  .description {
+    margin-bottom: 60px;
+  }
+
+  .container {
+    height: inherit;
+  }
+
+  .col-lg-5 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .specialist-grid {
+    position: absolute;
+    right: 6px;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 56%;
+    margin: 0 -15px;
+
+    .specialist-column {
+      padding: 0 15px;
+    }
+  }
+
+  .specialist-grid-top {
+    top: 60px;
+    right: 8%;
+  }
+
+  .specialist-grid-bottom {
+    bottom: 60px;
+  }
+
+  .specialist-card {
+    padding: 24px 24px 26px;
+    border-radius: 30px;
+    background-color: $--color-white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 270px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    .specialist-image {
+
+      img {
+        width: 118px;
+        height: 118px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    .specialist-name {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      width: 100%;
+      text-align: center;
+      color: $--color-default;
+      margin-bottom: 5px;
+    }
+
+    .specialist-description {
+
+      p {
+        color: $--color-grey;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        -moz-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-clamp: 2;
+        box-orient: vertical;
+      }
+
+    }
+
+  }
+}
+
+@media (max-width: 1600px) {
+  .specialist-section .specialist-grid-top {
+    right: 6px;
+  }
+}

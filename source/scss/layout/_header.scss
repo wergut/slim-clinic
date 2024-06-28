@@ -1,0 +1,26 @@
+.disclaimer {
+  background-color: $--color-default;
+  padding: 8px 0;
+
+  .h6 {
+    color: $--color-white;
+    width: 100%;
+    text-align: center;
+    span {
+      color: $--color-yellow;
+    }
+  }
+}
+
+.header {
+  padding: 30px 0 40px;
+
+  .btn {
+    max-width: 172px;
+    margin-left: auto;
+  }
+
+  .row {
+    align-items: center;
+  }
+}

@@ -1,0 +1,31 @@
+.faq-section {
+  margin: 140px 0 100px;
+
+  .callback-card {
+    padding: 94px 50px 60px;
+    height: 493px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+
+    .h5 {
+      margin-bottom: 5px;
+    }
+
+    .description {
+      width: 100%;
+
+      p {
+        margin-bottom: 27px;
+        color: $--color-grey;
+        max-width: 90%;
+      }
+    }
+
+    .btn {
+      max-width: 100%;
+    }
+
+  }
+}

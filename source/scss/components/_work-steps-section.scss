@@ -1,0 +1,83 @@
+.how-work-section {
+  margin: 125px 0 115px;
+
+
+  .work-steps-list {
+    width: 100%;
+    counter-reset: list;
+
+    .work-steps-card {
+      padding: 40px 30px 45px 25px;
+      height: 280px;
+      position: relative;
+      width: 100%;
+      border-radius: 30px;
+      margin-bottom: 30px;
+
+      .image-wrapper {
+
+        img {
+          object-fit: cover;
+          max-width: 469px;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          right: 25px;
+        }
+      }
+
+      .work-card-content {
+        display: flex;
+        flex-direction: column;
+
+        .card-step {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0.005em;
+          margin-bottom: 20px;
+          color: $--color-purple;
+
+          &:after {
+            counter-increment: list;
+            content: counter(list) "";
+            margin-left: 5px;
+          }
+        }
+        .h5 {
+          margin-bottom: 10px;
+        }
+        .card-description {
+          margin-bottom: 40px;
+        }
+        .link-purple {
+          margin-top: auto;
+        }
+      }
+
+      &:nth-of-type(1) {
+
+        .image-wrapper {
+
+          img {
+            max-width: 276px;
+            top: -73px;
+            right: 10%;
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+
+        .image-wrapper {
+
+          img {
+            top: -13px;
+          }
+        }
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,32 @@
+.main-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+
+  li {
+
+    a {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.001em;
+      color: $--color-default;
+
+      &:hover {
+        color: $--color-purple-dark;
+      }
+      &:focus {
+        color: $--color-purple;
+      }
+    }
+  }
+
+  li + li {
+    margin-left: 58px;
+  }
+
+}

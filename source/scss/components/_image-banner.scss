@@ -1,0 +1,124 @@
+.image-banner-section {
+  margin: 175px 0 60px;
+
+  .image-banner {
+    width: 100%;
+    border-radius: 30px;
+
+    .image-wrapper {
+      margin-top: -75px;
+
+      img {
+        height: 483px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+  }
+
+  .image-banner-content {
+    padding: 77px 0 79px 43px;
+    z-index: 1;
+    position: relative;
+
+    .h6 {
+      color: $--color-grey;
+    }
+
+    .image-banner-title {
+      font-size: 90px;
+      font-weight: 400;
+      line-height: 115px;
+      color: $--color-default;
+    }
+
+    .image-banner-subtitle {
+      font-size: 35px;
+      font-weight: 300;
+      line-height: 45px;
+      color: $--color-default;
+      margin-bottom: 35px;
+    }
+
+    .image-banner-links {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      .link-black {
+        margin-left: 50px;
+      }
+    }
+  }
+
+}
+
+.image-banner-section-second {
+  position: relative;
+  margin: 114px 0 170px;
+
+  .banner-description {
+    margin-bottom: 50px;
+  }
+
+  .image-banner-content {
+    padding: 60px 0 60px 40px;
+  }
+
+  .image-banner {
+    background-color: $--color-grey-light;
+    position: relative;
+
+    .image-wrapper {
+
+      img {
+        position: absolute;
+        height: 403px;
+        width: initial;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+      }
+    }
+  }
+}
+
+.image-banner-section-third {
+
+  .image-banner {
+    position: relative;
+    border-radius: 30px;
+    background-image: url(../img/back-banner-img.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+
+    .image-banner-content {
+      padding: 60px 0 60px 40px;
+    }
+
+    .h3 {
+      margin-bottom: 10px;
+      max-width: 80%;
+    }
+
+    .banner-description {
+      margin-bottom: 34px;
+    }
+
+    .image-wrapper {
+
+      img {
+        position: absolute;
+        right: 83px;
+        bottom: 0;
+        height: 443px;
+        border-radius: 30px;
+        max-width: 502px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
