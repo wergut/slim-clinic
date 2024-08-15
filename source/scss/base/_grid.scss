@@ -8,6 +8,10 @@
   padding: 0 24px;
 }
 
+.container .container {
+  padding: 0;
+}
+
 .container-fluid {
   max-width: 100%;
   width: 100%;
@@ -83,8 +87,7 @@
 
 @media (max-width: 1023px) {
   .container {
-    max-width: 959px;
-    padding: 0 42px;
+    padding: 0 70px;
   }
   .row {
     margin: 0 -12px;
@@ -92,6 +95,10 @@
   }
   [class*=col-] {
     padding: 0 12px;
+  }
+  .col-md-0 {
+    width: 0;
+    padding: 0;
   }
   .col-md-1 {
     width: 8.33333333%;
@@ -134,7 +141,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .col-m-1 {
     width: 8.33333333%;
   }
@@ -172,7 +179,7 @@
     width: 100%;
   }
   .container {
-    padding: 0 20px;
+    padding: 0 24px;
   }
 }
 

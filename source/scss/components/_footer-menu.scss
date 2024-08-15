@@ -1,3 +1,20 @@
+.footer {
+
+  ul {
+
+    li {
+
+      a {
+
+        &:hover {
+          color: $--color-purple;
+        }
+      }
+    }
+  }
+}
+
+
 .footer-menu {
   list-style: none;
   padding: 0;
@@ -24,6 +41,7 @@
   display: block;
   column-count: 2;
   margin: 0;
+  width: 100%;
 
   li {
     margin-bottom: 10px;
@@ -38,4 +56,40 @@
 
   }
 
+}
+
+@media (max-width: 1024px) {
+  .footer-menu {
+    padding-top: 26px;
+    border-top: 1px solid $--color-grey-opacity;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .secondary-menu {
+    column-count: 1;
+
+    li {
+
+      &:nth-of-type(4) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .footer-menu {
+    padding-top: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+    li {
+      width: 100%;
+
+      &:not(:last-of-type) {
+        margin-bottom: 15px;
+      }
+    }
+  }
 }

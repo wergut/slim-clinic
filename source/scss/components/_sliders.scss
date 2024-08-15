@@ -42,3 +42,18 @@
   overflow: hidden;
   padding-bottom: 46px;
 }
+
+@media (max-width: 1024px) {
+
+  .treatments-slider {
+    overflow: initial;
+
+    .swiper-button-prev {
+      left: 0;
+    }
+
+    .swiper-slide {
+      opacity: 1;
+    }
+  }
+}

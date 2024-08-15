@@ -1,6 +1,14 @@
 .image-banner-section {
   margin: 175px 0 60px;
 
+  .image-wrapper-mobile {
+    display: none;
+  }
+
+  .title-block {
+    margin-bottom: 0;
+  }
+
   .image-banner {
     width: 100%;
     border-radius: 30px;
@@ -13,6 +21,10 @@
         width: 100%;
         object-fit: cover;
       }
+    }
+
+    .image-wrapper-tablet {
+      display: none;
     }
 
   }
@@ -56,7 +68,8 @@
 
 .image-banner-section-second {
   position: relative;
-  margin: 114px 0 170px;
+  margin: 232px 0 170px;
+  width: 100%;
 
   .banner-description {
     margin-bottom: 50px;
@@ -66,9 +79,16 @@
     padding: 60px 0 60px 40px;
   }
 
+  h2 {
+    margin-bottom: 10px;
+  }
+
   .image-banner {
     background-color: $--color-grey-light;
     position: relative;
+    background-image: url(../img/banner-back3.png);
+    background-repeat: no-repeat;
+    background-position: right;
 
     .image-wrapper {
 
@@ -77,14 +97,17 @@
         height: 403px;
         width: initial;
         bottom: 0;
-        right: 0;
+        right: 140px;
         z-index: 0;
       }
     }
+
   }
 }
 
 .image-banner-section-third {
+  margin: 175px 0 80px;
+
 
   .image-banner {
     position: relative;
@@ -98,7 +121,7 @@
       padding: 60px 0 60px 40px;
     }
 
-    .h3 {
+    h2 {
       margin-bottom: 10px;
       max-width: 80%;
     }
@@ -111,14 +134,281 @@
 
       img {
         position: absolute;
-        right: 83px;
         bottom: 0;
-        height: 443px;
+        height: initial;
         border-radius: 30px;
-        max-width: 502px;
+        max-width: 55%;
+        right: 0;
         width: 100%;
         object-fit: cover;
       }
     }
   }
 }
+
+.page-template-index, .page-id-973 {
+
+  .image-banner-section-third {
+
+    .image-wrapper {
+
+      img {
+        object-fit: contain;
+        height: 443px;
+      }
+    }
+  }
+}
+
+.image-banner-section-drug {
+
+  .image-banner {
+
+    .image-wrapper {
+      display: flex;
+
+      img {
+        height: initial;
+        max-width: 410px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .image-banner-section {
+    margin: 100px 0;
+
+    .image-banner {
+
+      .image-wrapper  {
+        margin-top: 0;
+        height: 100%;
+        align-items: flex-end;
+        padding-bottom: 20px;
+
+        img {
+          height: initial;
+        }
+      }
+
+      .image-wrapper-tablet {
+        display: block;
+      }
+
+    }
+
+    .image-banner-content  {
+      padding: 75px 0 75px 30px;
+
+      .image-banner-links {
+
+        .link-black {
+          margin-left: 30px;
+        }
+      }
+
+      .image-banner-title {
+        font-size: 80px;
+        line-height: normal;
+      }
+      .image-banner-subtitle {
+        font-size: 25px;
+        margin-top: -20px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .image-banner-section-second {
+
+    .image-banner-content {
+      padding: 40px 20px 40px 40px;
+    }
+
+    .image-banner {
+      background-image: url(../img/back321.png);
+
+      .image-wrapper {
+
+        img {
+          right: 18px;
+          height: 370px;
+        }
+      }
+      .image-wrapper-pc {
+        display: none;
+      }
+    }
+  }
+
+  .image-banner-section-third {
+    margin: 100px 0;
+
+    .image-banner {
+      background-image: url(../img/back2f4.png);
+      background-size: initial;
+
+      .image-banner-content {
+        padding: 40px 0 40px 25px;
+      }
+
+      h2 {
+        max-width: 100%;
+      }
+
+      .banner-description {
+
+        p {
+          max-width: 100%;
+        }
+      }
+
+      .image-wrapper {
+
+        img {
+          right: 0;
+          height: initial;
+          max-width: 365px;
+        }
+      }
+      .image-wrapper-pc {
+        display: none;
+      }
+    }
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .image-banner-section {
+    margin: 60px 0;
+
+    .image-banner {
+      .image-wrapper {
+
+        img {
+          height: initial;
+          max-width: 287px;
+        }
+      }
+      .image-wrapper-mobile {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .image-banner-content {
+      padding: 35px 20px 30px;
+
+      .image-banner-title {
+        font-size: 58px;
+        line-height: normal;
+      }
+
+      .image-banner-subtitle {
+        margin-top: 0;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.027px;
+      }
+
+      .image-banner-links {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .btn-black {
+          max-width: 100%;
+        }
+
+        .link-black {
+          margin-left: 0;
+          margin-top: 20px;
+        }
+      }
+
+    }
+
+    .image-wrapper-mobile {
+      display: block;
+    }
+    .image-wrapper-pc {
+      display: none;
+    }
+  }
+
+  .image-banner-section-second {
+    margin: 55px 0 80px;
+
+    .image-banner {
+      background-image: url(../img/back5451.png);
+      background-position: 50% 100%;
+      background-size: 100% 50%;
+
+      .image-wrapper-mobile {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0 0 0;
+
+        img {
+          position: static;
+          height: initial;
+        }
+      }
+
+      .image-wrapper-tablet {
+        display: none;
+      }
+    }
+
+    .banner-description {
+      margin-bottom: 20px;
+    }
+
+    .image-banner-content {
+      padding: 30px 20px 0;
+    }
+  }
+
+  .image-banner-section-third {
+
+    .title-block {
+      h2 {
+        font-size: 30px;
+        line-height: 31px;
+      }
+    }
+
+    .image-banner {
+      background-image: url(../img/back691.png);
+      background-position: 50% 100%;
+      background-size: 100% 50%;
+
+
+      .image-banner-content {
+        padding: 30px 20px 0;
+      }
+
+      .image-wrapper {
+
+        img {
+          position: static;
+          height: initial;
+          max-width: 100%;
+        }
+      }
+
+      .image-wrapper-mobile {
+        display: flex;
+        padding-bottom: 0;
+        padding-top: 30px;
+      }
+      .image-wrapper-tablet {
+        display: none;
+      }
+    }
+  }
+
+}
+

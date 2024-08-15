@@ -30,3 +30,20 @@
   }
 
 }
+
+
+@media (max-width: 1024px) {
+  .main-menu {
+    display: block;
+
+    li {
+      width: 100%;
+      text-align: right;
+    }
+
+    li + li {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  }
+}

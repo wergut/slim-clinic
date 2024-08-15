@@ -1,4 +1,4 @@
-var swiper= new Swiper(".treatments-slider", {
+var swiper = new Swiper(".treatments-slider", {
   observer: true,
   observeParents: true,
   observeSlideChildren: true,
@@ -16,13 +16,38 @@ var swiper= new Swiper(".treatments-slider", {
     },
     601: {
       spaceBetween: 24,
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
     1024: {
       slidesPerView: 3,
       spaceBetween: 30,
     },
   }
+});
+
+var swiper1 = new Swiper(".before-after-slider", {
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  watchSlidesProgress: true,
+  allowTouchMove: false,
+  navigation: {
+    nextEl: ".before-after-slider .swiper-button-next",
+    prevEl: ".before-after-slider .swiper-button-prev",
+  },
+});
+
+var swiper2 = new Swiper(".specialists-slider", {
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
+  slidesPerView: 3,
+  spaceBetween: 24,
+  watchSlidesProgress: true,
+  allowTouchMove: false,
+  freeMode: true,
 });
 
 
@@ -78,4 +103,57 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Update values when the slider is moved
   weightRange.addEventListener('input', updateWeightValues);
+});
+
+(function($) {
+  var $dragMe = $(".dragme"),
+    $container = $(".sl-container"),
+    $viewAfter = $(".view-after");
+  $dragMe.draggable({
+    containment: "parent",
+    drag: function() {
+      $viewAfter.css({
+        width : parseFloat($(this).css('left')) + 5
+      });
+    }
+  });
+  $container.on("click", function(event) {
+    var eventLeft = event.pageX - $container.offset().left - 15;
+    animateTo(eventLeft);
+  });
+  animateTo("40%");
+  function animateTo(_left) {
+    $dragMe.animate({
+      left: _left
+    }, 'slow', 'linear');
+    $viewAfter.animate({
+      width: _left
+    }, 'slow', 'linear');
+  }
+})(jQuery);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const btnMenuMobile = document.querySelector('.btn-popup-menu');
+  const headerMobileWrapper = document.querySelector('.header-nav');
+
+  btnMenuMobile.addEventListener('click', function () {
+    headerMobileWrapper.classList.toggle('show');
+
+    if (headerMobileWrapper.classList.contains('show')) {
+      btnMenuMobile.classList.add('cross');
+    } else {
+      btnMenuMobile.classList.remove('cross');
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const locationsBtn = document.querySelector('.btn-locations');
+  const locationsCards = document.querySelector('.locations-list');
+
+  locationsBtn.addEventListener('click', function () {
+    locationsCards.classList.toggle('hidden');
+    locationsBtn.classList.toggle('rotate');
+  });
 });

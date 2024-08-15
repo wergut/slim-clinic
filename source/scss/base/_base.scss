@@ -34,9 +34,14 @@ body::-webkit-scrollbar-thumb {
       position: absolute;
       bottom: 0;
       right: 0;
-      max-width: 140px;
       width: 100%;
       object-fit: cover;
+      transition: 0.3s;
+    }
+    .image-hover {
+      opacity: 0;
+      visibility: hidden;
+      overflow: hidden;
     }
   }
 
@@ -82,10 +87,22 @@ body::-webkit-scrollbar-thumb {
     margin-top: auto;
     justify-content: flex-start;
     padding-left: 50px;
-    max-width: 100%;
+    max-width: 270px;
   }
 
   &:hover {
+
+    .image-hover {
+      opacity: 1;
+      visibility: visible;
+      overflow: visible;
+    }
+
+    .image {
+      visibility: hidden;
+      opacity: 0;
+      overflow: hidden;
+    }
 
     .tags-wrapper {
 
@@ -121,4 +138,44 @@ body::-webkit-scrollbar-thumb {
   width: 16px;
   height: 16px;
   background-image: url(../img/icons/rating-star.svg);
+}
+
+@media (max-width: 1024px) {
+  .treatment-card {
+
+    &:hover .tags-wrapper .tag span {
+      background-color: $--color-grey;
+    }
+
+    .tags-wrapper {
+      margin-bottom: 30px;
+
+      .tag {
+
+        span {
+          font-weight: 500;
+          letter-spacing: 0.175px;
+          line-height: normal;
+          font-family: $--font-default;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .treatment-card {
+    height: 425px;
+    padding: 40px 20px;
+
+    .tags-wrapper {
+      margin-bottom: 10px;
+    }
+  }
+
+  h3, .h3 {
+    font-size: 30px;
+    line-height: 105%;
+  }
 }
